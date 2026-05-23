@@ -1,118 +1,124 @@
-<DOCTYPE html>
-  <html lang="en">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1. 0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shibla -MERN Developer</title>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css" />
   </head>
- <body>
-
+  <body>
     <!--NAVIGATION-->
-     <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#media">Media</a>
-      <a href="#contact">Contact</a>
-     </nav>
+    <nav>
+      <!--Logo on the LEFT-->
+      <a href="#" class="nav-logo">Shibla</a>
+
+      <!--links on the RIGHT-->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <!--HERO SECTION-->
-     <header>
+    <header>
       <figure>
         <img
           src="https://placehold.co/150x150"
           alt="Shibla profile photo"
           width="150"
-          />
-          <figcaption>Shibla - MERN Developer</figcaption>
-       </figure>
+        />
+        <figcaption>Shibla - MERN Developer</figcaption>
+      </figure>
       <h1>Hello, I am Shibla</h1>
       <p>I am a MERN Stack Developer in training</p>
       <p>Based in Kerala, India.</p>
-      <a href="mailto:shiblazain2gmail.com">Contact Me</a>
-      </header>
-      <!--ABOUT SECTION-->
-     <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I am a Computer Science graduate learning full stack web development. My goal is to become a professional MERN stack developer.
-                </p>
-      </section>
+      <a href="mailto:shiblazain@gmail.com">Contact Me</a>
+    </header>
+    <!--ABOUT SECTION-->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science graduate learning full stack web development. My
+        goal is to become a professional MERN stack developer.
+      </p>
+    </section>
 
-      <!-- SKILLS SECTION-->
-      <section id="skills">
-        <h2>My Skills</h2>
-        <table>
-           <thead>
-             <tr>
-              <th>Skill</th>
-              <th>Level</th>
-              <th>Status</th>
-             </tr>
-           </thead>
-           <tbody>
-            <tr>
-              <td>HTML</td>
-              <td>Beginner</td>
-              <td>Learning</td>
-             </tr>
-             <tr>
-              <td>CSS </td>
-              <td>Beginner</td>
-              <td>Coming Soon</td>
-             </tr>
-             <tr>
-              <td>JavaScript</td>
-              <td>Begginer</td>
-              <td>Coming Soon</td>
-             </tr>
-             <tr>
-              <td>Python</td>
-              <td>Intermediate</td>
-              <td>Known</td>
-             </tr>
-           </tbody>
-          </table> 
-      </section>
-      <!--CONTACT DETAILS-->
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" placeholder="Enter your name"/>
-        
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" placeholder="Enter your email"/>
+    <!-- SKILLS SECTION-->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>Structure of web pages</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Web interactivity</p>
+        </div>
 
-          <label for="message">Message:</label>
-          <textarea id="message" placeholder="write your message"></textarea>    
-          <button type="submit">Send Message</button>    
-          </form>
-      </section>
-      <!--MEDIA SECTION-->
-      <section id="media">
-        <h2>Media Section</h2>
-        <!--VIDEO-->
-        <h3>Sample Video</h3>
-        <video width="320" height="240" controls>
-          <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-            />
-            Your browser does not support video
-        </video>
-        <!--AUDIO-->
-        <h3>Sample Audio</h3>
-        <audio controls>
-          <source
-             src="https://www.w3schools.com/html/horse.mp3"
-             type="audio/mpeg"
-             />
-             Your browser does not support audio
-        </audio>
-       </section>
-      <!--FOOTER-->
-      <footer>
-       <p> Made by Shibla | 2026</P>
-      </footer>
- </body>
-  </html
+        <div class="skill-card">
+          <h3>Python</h3>
+          <p>Programming basics</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>React</h3>
+          <p>Coming soon!</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Node.js</h3>
+          <p>Coming soon!</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>Styling and layouts</p>
+        </div>
+      </div>
+    </section>
+    <!--CONTACT DETAILS-->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="write your message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <!--MEDIA SECTION-->
+    <section id="media">
+      <h2>Media Section</h2>
+      <!--VIDEO-->
+      <h3>Sample Video</h3>
+      <video width="320" height="240" controls>
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support video
+      </video>
+      <!--AUDIO-->
+      <h3>Sample Audio</h3>
+      <audio controls>
+        <source
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support audio
+      </audio>
+    </section>
+    <!--FOOTER-->
+    <footer>
+      <p>Made by Shibla | 2026</p>
+    </footer>
+  </body>
+</html>
