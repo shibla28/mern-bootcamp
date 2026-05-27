@@ -295,3 +295,99 @@ img {
     gap: 10px;
   }
 }
+/* ===== ANIMATIONS ===== */
+
+/* Fade in from top for navbar */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in from bottom for content */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse for profile image */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply animations */
+nav {
+  animation: fadeInDown 0.8s ease forwards;
+}
+
+header h1 {
+  animation: fadeInUp 1s ease 0.3s forwards;
+  opacity: 0;
+}
+
+header p {
+  animation: fadeInUp 1s ease 0.5s forwards;
+  opacity: 0;
+}
+
+header a {
+  animation: fadeInUp 1s ease 0.7s forwards;
+  opacity: 0;
+}
+
+/* Profile image pulses gently */
+figure img {
+  animation: pulse 2s ease infinite;
+}
+
+/* ===== IMPROVED HOVER EFFECTS ===== */
+
+/* Skill cards */
+.skill-card {
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Nav links */
+.nav-links a {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Button */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Sections fade in */
+section {
+  animation: fadeInUp 0.8s ease forwards;
+}
