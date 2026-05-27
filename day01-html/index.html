@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shibla -MERN Developer</title>
+    <title>Shibla - MERN Developer</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--NAVIGATION-->
+    <!-- NAVIGATION -->
     <nav>
-      <!--Logo on the LEFT-->
       <a href="#" class="nav-logo">Shibla</a>
 
-      <!--links on the RIGHT-->
+      <!-- Checkbox for Pure CSS Hamburger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -21,7 +28,7 @@
       </ul>
     </nav>
 
-    <!--HERO SECTION-->
+    <!-- HERO SECTION -->
     <header>
       <figure>
         <img
@@ -36,7 +43,8 @@
       <p>Based in Kerala, India.</p>
       <a href="mailto:shiblazain@gmail.com">Contact Me</a>
     </header>
-    <!--ABOUT SECTION-->
+
+    <!-- ABOUT SECTION -->
     <section id="about">
       <h2>About Me</h2>
       <p>
@@ -45,7 +53,7 @@
       </p>
     </section>
 
-    <!-- SKILLS SECTION-->
+    <!-- SKILLS SECTION -->
     <section id="skills">
       <h2>My Skills</h2>
       <div class="skills-grid">
@@ -54,32 +62,29 @@
           <p>Structure of web pages</p>
         </div>
         <div class="skill-card">
+          <h3>CSS</h3>
+          <p>Styling and animations</p>
+        </div>
+        <div class="skill-card">
           <h3>JavaScript</h3>
           <p>Web interactivity</p>
         </div>
-
-        <div class="skill-card">
-          <h3>Python</h3>
-          <p>Programming basics</p>
-        </div>
-
         <div class="skill-card">
           <h3>React</h3>
           <p>Coming soon!</p>
         </div>
-
         <div class="skill-card">
           <h3>Node.js</h3>
           <p>Coming soon!</p>
         </div>
-
         <div class="skill-card">
-          <h3>CSS</h3>
-          <p>Styling and layouts</p>
+          <h3>MongoDB</h3>
+          <p>Coming soon!</p>
         </div>
       </div>
     </section>
-    <!--CONTACT DETAILS-->
+
+    <!-- CONTACT SECTION -->
     <section id="contact">
       <h2>Contact Me</h2>
       <form>
@@ -90,23 +95,24 @@
         <input type="email" id="email" placeholder="Enter your email" />
 
         <label for="message">Message:</label>
-        <textarea id="message" placeholder="write your message"></textarea>
+        <textarea id="message" placeholder="Write your message"></textarea>
+
         <button type="submit">Send Message</button>
       </form>
     </section>
-    <!--MEDIA SECTION-->
+
+    <!-- MEDIA SECTION -->
     <section id="media">
       <h2>Media Section</h2>
-      <!--VIDEO-->
       <h3>Sample Video</h3>
-      <video width="320" height="240" controls>
+      <video width="100%" controls>
         <source
           src="https://www.w3schools.com/html/mov_bbb.mp4"
           type="video/mp4"
         />
         Your browser does not support video
       </video>
-      <!--AUDIO-->
+
       <h3>Sample Audio</h3>
       <audio controls>
         <source
@@ -116,9 +122,12 @@
         Your browser does not support audio
       </audio>
     </section>
-    <!--FOOTER-->
+
+    <!-- FOOTER -->
     <footer>
       <p>Made by Shibla | 2026</p>
     </footer>
+    <!-- Add before </body> tag -->
+    <script src="script.js"></script>
   </body>
 </html>
